@@ -1,0 +1,154 @@
+/* RESET & BASE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background: #ffffff;
+}
+
+/* LAYOUT */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* HEADER & NAV */
+.site-header {
+  background: #9f052e;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.5rem;
+}
+.nav-toggle {
+  background: none;
+  border: none;
+  color: #f1f0f0;
+  font-size: 1.8rem;
+  display: none;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+/* Link hover */
+.site-nav a:hover,
+.social-links a:hover {
+  color: #f03102;
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: #eeda43;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.social-links a {
+  text-decoration: none;
+  color: #031238;
+  font-weight: bold;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 5px 15px rgb(213, 52, 3);
+}
+
+/* SKILLS GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1rem;
+}
+.skills-grid div {
+  background: #dfe876;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(216, 206, 62, 0.955);
+}
+
+/* FOOTER */
+.site-footer {
+  background: #bf3434;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* RESPONSIVE NAV */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #da2c2c;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  .site-nav.open {
+    max-height: 300px;
+  }
+  .site-nav ul {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  /* Back-to-top button */
+#backTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: .5rem .8rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background: #eaff00;
+  color: #da0a0a;
+  cursor: pointer;
+  display: none;
+  opacity: .7;
+  transition: opacity .2s ease;
+}
+#backTop:hover {
+  opacity: 1;
+}
+}

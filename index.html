@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kareem Shereef Saleh — Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Kareem Shereef Saleh</h1>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero container" data-aos="fade-up">
+      <h2>Aspiring Mechanical Engineer &amp; Educator</h2>
+      <p>
+        Bachelor of Mechanical Engineering (Suez Canal University, 2026) from Ismailia, Egypt.
+        Passionate about hands-on design, teaching, and multidisciplinary teamwork.
+      </p>
+      <ul class="social-links">
+        <li><a href="mailto:kareemshereefsaleh@gmail.com">Email</a></li>
+        <li><a href="tel:+201024373786">Phone</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/kareem-sheref-saleh-b69a1a30b/">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience" class="container" data-aos="fade-up">
+      <h2>Work &amp; Training Experience</h2>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Mechanical Engineering Intern</h3>
+        <h4>Suez Canal Authority (Jul–Aug 2024)</h4>
+        <ul>
+          <li>Maintained &amp; operated ship, excavator, and drill motors.</li>
+          <li>Hands-on with mechanical &amp; electrical components.</li>
+          <li>Received excellent performance evaluations.</li>
+        </ul>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Automotive Maintenance Technician</h3>
+        <h4>Engineering Center for Vehicle Maintenance, Giza (Summer 2025)</h4>
+        <ul>
+          <li>Diagnostics &amp; repair of French &amp; German cars.</li>
+          <li>Strengthened troubleshooting skills.</li>
+        </ul>
+      </div>
+
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Mathematics Teacher</h3>
+        <h4>Modern Center for Teaching, Ismailia (Aug 2024–Present)</h4>
+        <ul>
+          <li>Taught algebra, geometry, calculus to Prep &amp; Secondary levels.</li>
+          <li>Interactive lessons with real-world applications.</li>
+          <li>Exam prep for national &amp; international tests.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Technical &amp; Soft Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h4>Mechanical Design</h4>
+          <p>SolidWorks 2022, Ansys FEA</p>
+        </div>
+        <div>
+          <h4>Manufacturing</h4>
+          <p>Welding, CNC Machining, Sheet Metal</p>
+        </div>
+        <div>
+          <h4>Leadership</h4>
+          <p>Team Coordination, Project Management</p>
+        </div>
+        <div>
+          <h4>Computer</h4>
+          <p>MS Excel, Word, PowerPoint, Web Dev</p>
+        </div>
+        <div>
+          <h4>Languages</h4>
+          <p>Arabic (Native), English (Advanced), French (Intermediate)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="container">
+      <h2>Certifications &amp; Competitions</h2>
+      <ul>
+        <li>
+          <strong>SolidWorks</strong> (Nov 2024): Parametric modeling, FEA, assembly integration.
+        </li>
+        <li>
+          <strong>Career Development</strong> (Mar 2025): Goal setting, lifelong learning, networking.
+        </li>
+        <li>
+          <strong>Brakes Design Engineer</strong> – EVER Egypt: EV brake design with SCU Racing Team.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>
+        Email: <a href="mailto:kareemshereefsaleh@gmail.com">kareemshereefsaleh@gmail.com</a><br/>
+        Phone: <a href="tel:+201024373786">+20 102 437 3786</a>
+      </p>
+      <p>© 2025 Kareem Shereef Saleh</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+    <!-- AOS.js -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- your script.js -->
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Back-to-top button
+    const btn = document.createElement('button');
+    btn.id = 'backTop';
+    btn.textContent = '↑';
+    document.body.appendChild(btn);
+
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    window.addEventListener('scroll', () => {
+      btn.style.display = window.pageYOffset > 300 ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>  <head>
+    …
+    <!-- AOS.css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- your style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Smooth scroll via CSS -->
+    <style>html { scroll-behavior: smooth; }</style>
+  </head>
